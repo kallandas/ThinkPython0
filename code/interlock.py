@@ -11,7 +11,7 @@ from inlist import *
 
 
 def interlock(word_list, word):
-    """Checks whether a reversed word appears in word_list.
+    """Checks whether a word can be split into two interlocked words.
 
     word_list: list of strings
     word: string
@@ -22,7 +22,7 @@ def interlock(word_list, word):
         
 
 def interlock_general(word_list, word, n=3):
-    """Checks whether a reversed word appears in word_list.
+    """Checks whether a word can be split into n interlocked words.
 
     word_list: list of strings
     word: string
@@ -42,8 +42,9 @@ if __name__ == '__main__':
         if interlock(word_list, word):
             print word, word[::2], word[1::2]
 
-    for word in word_list:
-        if interlock_general(word_list, word, 3):
-            print word, word[0::3], word[1::3], word[2::3]
+
+#    for word in word_list:
+#        if interlock_general(word_list, word, 3):
+#            print word, word[0::3], word[1::3], word[2::3]
 
 
