@@ -21,6 +21,6 @@ def is_abecedarian(word):
         previous = c
     return True
 
-print is_abecedarian('accegj')
-print is_abecedarian('bob')
+print(is_abecedarian('accegj'))
+print(is_abecedarian('bob'))
 
